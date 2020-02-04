@@ -1,19 +1,16 @@
-<!doctype html>
-<html lang='pt'>
-  
-<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-<script src="https://raw.githack.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
-	<body style='margin : 0px; overflow: hidden;'>
-
-		<a-scene embedded arjs='sourceType: webcam;'>
-		
-			<a-marker preset='hiro'>
-				<a-entity 
-            				obj-model="obj: url(https://rafelis1997.github.io/IronMan/IronMan.obj); 
-            				mtl: url(https://rafelis1997.github.io/IronMan/IronMan.mtl)">
-        			</a-entity>
-			</a-marker>
-			<a-entity camera></a-entity>
-		</a-scene>
-	</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+       <a-entity 
+            obj-model="obj: url(https://rafelis1997.github.io/IronMan/IronMan.obj); 
+            mtl: url(https://rafelis1997.github.io/IronMan/IronMan.mtl)">
+        </a-entity>
+    </a-scene>
+  </body>
 </html>
