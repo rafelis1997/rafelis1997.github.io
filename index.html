@@ -5,12 +5,12 @@
 <script src="https://raw.githack.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
 	<body style='margin : 0px; overflow: hidden;'>
 
-		<a-scene embedded arjs>
+		<a-scene embedded arjs='sourceType: webcam;'>
 		
 			<a-marker preset='hiro'>
 				<a-entity 
             				obj-model="obj: url(https://rafelis1997.github.io/IronMan/IronMan.obj); 
-            				mtl: url(https://rafelis1997.github.io/IronMan/IronMan.obj)">
+            				mtl: url(https://rafelis1997.github.io/IronMan/IronMan.mtl)">
         			</a-entity>
 			</a-marker>
 			<a-entity camera></a-entity>
