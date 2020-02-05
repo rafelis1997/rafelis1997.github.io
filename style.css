@@ -38,4 +38,12 @@ header{
   top: 0;
   font-family: 'Muli', sans-serif;
   color: white;
+} 
+
+header.h2{
+    margin: 5px 10px 5px 10px;
+    padding: 10px 5px 0 0;
+    top: 0;
+    left: 0;
+    border-right: 2px solid white;
 }
