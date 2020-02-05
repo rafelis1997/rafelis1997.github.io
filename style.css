@@ -33,5 +33,7 @@ header{
   height: 40px;
   background-color: cadetblue;
   position: absolute;
-  padding: 3px;
+  padding: 10px;
+  left: 0;
+  top: 0;
 }
