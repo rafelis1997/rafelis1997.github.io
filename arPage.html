@@ -25,6 +25,7 @@
           font-size: 16px;
           cursor: pointer;
           border-radius: 4px;
+          margin-bottom: 10px;
           margin-top: 10px;
         }
     </style>
@@ -49,6 +50,9 @@
     </script>
   </head>  
   <body>
+    <button id="changeAnim" onclick="changeAnim()">
+        Next Animation
+    </button>
     <a-scene embedded arjs="debugUIEnabled: false;">                                        
       <a-marker preset='hiro'>
           <a-entity id="bee" 
@@ -57,8 +61,4 @@
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
-    <button id="changeAnim" onclick="changeAnim()">
-        Next Animation
-    </button>
-  </body>
 </html>
