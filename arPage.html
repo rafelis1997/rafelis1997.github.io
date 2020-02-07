@@ -20,13 +20,13 @@
       function changeAnim() {
       
       if(x==0){
-        document.getElementById("bee").setAttribute("animation-mixer","clip:_bee_idle; loop:infinite");
+        document.getElementById("bee").animationMixer ="clip:_bee_idle; loop:infinite;
         x = 1;
       } else if (x==1){
-        document.getElementById("bee").setAttribute("animation-mixer","clip:_bee_take_off_and_land; loop:infinite");
+        document.getElementById("bee").animationMixer ="clip:_bee_take_off_and_land; loop:infinite";
         x=2;
       } else {
-        document.getElementById("bee").setAttribute("animation-mixer","clip:_bee_hover; loop:infinite");
+        document.getElementById("bee").animationMixer ="clip:_bee_hover; loop:infinite";
         x=0;
       }
     }
