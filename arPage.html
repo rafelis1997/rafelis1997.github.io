@@ -12,15 +12,31 @@
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
+    <style>
+        .changeAnim{
+          top: 50%;
+          left: 50%;
+          background-color: #fe4a49; /* Green */
+          border: none;
+          color: white;
+          padding: 20px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 4px;
+          margin-top: 10px;
+        }
+    </style>
     
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-    <!-- <script>
+    <script>
       var x = 0
       function changeAnim() {
       
       if(x==0){
-        document.getElementById("bee").animationMixer ="clip:_bee_idle; loop:infinite;
+        document.getElementById("bee").animationMixer ="clip:_bee_idle; loop:infinite";
         x = 1;
       } else if (x==1){
         document.getElementById("bee").animationMixer ="clip:_bee_take_off_and_land; loop:infinite";
@@ -30,7 +46,7 @@
         x=0;
       }
     }
-    </script> -->
+    </script>
   </head>  
   <body>
     <a-scene embedded arjs="debugUIEnabled: false;">                                        
@@ -41,8 +57,8 @@
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
-    <!--<button class="changeAnim" onclick="changeAnim()">
+    <button id="changeAnim" onclick="changeAnim()">
         Next Animation
-    </button>-->
+    </button>
   </body>
 </html>
