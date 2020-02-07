@@ -12,7 +12,20 @@ h1 {
   font-style: italic;
   color: #373fff;
 }
-
+.changeAnim{
+  top: 50%;
+  left: 50%;
+  background-color: #fe4a49; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
 .activateAr{
   top: 50%;
   left: 50%;
