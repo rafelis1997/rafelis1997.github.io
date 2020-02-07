@@ -13,7 +13,7 @@
     <script>
     var y = 0
       function changeAnimat() {
-        var iframe = document.getElementById("arPage");
+        var iframe = contentWindow.document.getElementById("arPage");
         var innerDoc = (iframe.contentDocument) 
                ? iframe.contentDocument 
                : iframe.contentWindow.document;
