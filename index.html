@@ -14,8 +14,8 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
     <script>
-      
-    var x = 0
+   
+      var x = 0
       function changeAnim() {
       var iframe = document.getElementById("arPage");
       if(x==0){
@@ -28,7 +28,9 @@
         iframe.contentWindow.document.getElementById("bee").animationMixer ="clip:_bee_hover; loop:infinite";
         x=0;
       }
-    }
+      }
+    </script>
+    <script>
     function addScene() {
       var scene = document.createElement("iframe")
       scene.setAttribute("id", "arPage")
