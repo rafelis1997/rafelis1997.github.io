@@ -18,10 +18,10 @@
           win.contentWindow.document.getElementByClassName("bee").animationMixer ="clip:_bee_idle; loop:infinite";
           y = 1;
         } else if (y==1){
-          win.contentWindow.document.getElementById("bee").animationMixer ="clip:_bee_take_off_and_land; loop:infinite";
+          win.contentWindow.document.getElementByClassName("bee").animationMixer ="clip:_bee_take_off_and_land; loop:infinite";
           y=2;
         } else {
-          win.contentWindow.document.getElementById("bee").animationMixer ="clip:_bee_hover; loop:infinite";
+          win.contentWindow.document.getElementByClassName("bee").animationMixer ="clip:_bee_hover; loop:infinite";
           y=0;
         }
       }
