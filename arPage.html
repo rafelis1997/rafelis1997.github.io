@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="/style.css">
     <style>
         #changeAnim{
-          top: 50%;
           left: 50%;
           background-color: #fe4a49; /* Green */
           border: none;
@@ -43,6 +42,9 @@
            </a-entity>
         </a-marker>
         <a-entity camera></a-entity>
+      <div aframe-injected="" style="position: fixed;"><button id="changeAnim" onclick="changeAnim()" aframe-injected="" style="left: 5px; bottom: 5px; position:fixed;">
+        Next Animation
+      </button></div>
     </a-scene>
     <button id="changeAnim" onclick="changeAnim()">
         Next Animation
