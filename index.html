@@ -13,8 +13,10 @@
     <script>
     var y = 0
       function changeAnimat() {
-        var iframe = document.getElementById('arPage');
-        var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+        var iframe = document.getElementById("arPage");
+        var innerDoc = (iframe.contentDocument) 
+               ? iframe.contentDocument 
+               : iframe.contentWindow.document;
         if(y==0){
           innerDoc.getElementById("bee").animationMixer ="clip:_bee_idle; loop:infinite";
           y = 1;
