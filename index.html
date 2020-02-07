@@ -13,15 +13,16 @@
     <script>
     var y = 0
       function changeAnimat() {
-      
+        var iframe = document.getElementById('arPage');
+        var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
         if(y==0){
-          document.getElementById("bee").animationMixer ="clip:_bee_idle; loop:infinite";
+          innerDoc.getElementById("bee").animationMixer ="clip:_bee_idle; loop:infinite";
           y = 1;
         } else if (y==1){
-          document.getElementById("bee").animationMixer ="clip:_bee_take_off_and_land; loop:infinite";
+          innerDoc.getElementById("bee").animationMixer ="clip:_bee_take_off_and_land; loop:infinite";
           y=2;
         } else {
-          document.getElementById("bee").animationMixer ="clip:_bee_hover; loop:infinite";
+          innerDoc.getElementById("bee").animationMixer ="clip:_bee_hover; loop:infinite";
           y=0;
         }
       }
